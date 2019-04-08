@@ -1,6 +1,9 @@
 from .base import *
 import dj_database_url
 
+MIDDLEWARE += [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+]
 
 DATABASES = {
     'default': {
